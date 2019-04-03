@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDecimal = new System.Windows.Forms.TextBox();
-            this.txtBinario = new System.Windows.Forms.TextBox();
-            this.txtOctal = new System.Windows.Forms.TextBox();
-            this.txtHexa = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtBase5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtHexa = new System.Windows.Forms.TextBox();
+            this.txtOctal = new System.Windows.Forms.TextBox();
+            this.txtBinario = new System.Windows.Forms.TextBox();
+            this.txtDecimal = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -63,71 +63,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informe um valor qualquer.";
             // 
-            // label1
+            // txtBase5
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Decimal:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Binário:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Octal:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 142);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Hexadecimal:";
-            // 
-            // txtDecimal
-            // 
-            this.txtDecimal.Location = new System.Drawing.Point(97, 31);
-            this.txtDecimal.Name = "txtDecimal";
-            this.txtDecimal.Size = new System.Drawing.Size(226, 20);
-            this.txtDecimal.TabIndex = 1;
-            // 
-            // txtBinario
-            // 
-            this.txtBinario.Location = new System.Drawing.Point(97, 68);
-            this.txtBinario.Name = "txtBinario";
-            this.txtBinario.Size = new System.Drawing.Size(226, 20);
-            this.txtBinario.TabIndex = 3;
-            // 
-            // txtOctal
-            // 
-            this.txtOctal.Location = new System.Drawing.Point(97, 104);
-            this.txtOctal.Name = "txtOctal";
-            this.txtOctal.Size = new System.Drawing.Size(226, 20);
-            this.txtOctal.TabIndex = 5;
-            this.txtOctal.TextChanged += new System.EventHandler(this.txtOctal_TextChanged);
-            // 
-            // txtHexa
-            // 
-            this.txtHexa.Location = new System.Drawing.Point(97, 139);
-            this.txtHexa.Name = "txtHexa";
-            this.txtHexa.Size = new System.Drawing.Size(226, 20);
-            this.txtHexa.TabIndex = 7;
+            this.txtBase5.Location = new System.Drawing.Point(97, 175);
+            this.txtBase5.Name = "txtBase5";
+            this.txtBase5.Size = new System.Drawing.Size(226, 20);
+            this.txtBase5.TabIndex = 9;
             // 
             // label5
             // 
@@ -139,12 +80,71 @@
             this.label5.Text = "Base 5:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txtBase5
+            // txtHexa
             // 
-            this.txtBase5.Location = new System.Drawing.Point(97, 175);
-            this.txtBase5.Name = "txtBase5";
-            this.txtBase5.Size = new System.Drawing.Size(226, 20);
-            this.txtBase5.TabIndex = 9;
+            this.txtHexa.Location = new System.Drawing.Point(97, 139);
+            this.txtHexa.Name = "txtHexa";
+            this.txtHexa.Size = new System.Drawing.Size(226, 20);
+            this.txtHexa.TabIndex = 7;
+            // 
+            // txtOctal
+            // 
+            this.txtOctal.Location = new System.Drawing.Point(97, 104);
+            this.txtOctal.Name = "txtOctal";
+            this.txtOctal.Size = new System.Drawing.Size(226, 20);
+            this.txtOctal.TabIndex = 5;
+            this.txtOctal.TextChanged += new System.EventHandler(this.txtOctal_TextChanged);
+            // 
+            // txtBinario
+            // 
+            this.txtBinario.Location = new System.Drawing.Point(97, 68);
+            this.txtBinario.Name = "txtBinario";
+            this.txtBinario.Size = new System.Drawing.Size(226, 20);
+            this.txtBinario.TabIndex = 3;
+            // 
+            // txtDecimal
+            // 
+            this.txtDecimal.Location = new System.Drawing.Point(97, 31);
+            this.txtDecimal.Name = "txtDecimal";
+            this.txtDecimal.Size = new System.Drawing.Size(226, 20);
+            this.txtDecimal.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(19, 142);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Hexadecimal:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(19, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Octal:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(19, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Binário:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Decimal:";
             // 
             // btnLimpar
             // 
@@ -163,6 +163,7 @@
             this.btnSair.TabIndex = 11;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // Form1
             // 
