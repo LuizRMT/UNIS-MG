@@ -78,7 +78,6 @@
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Base 5:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtHexa
             // 
@@ -93,7 +92,6 @@
             this.txtOctal.Name = "txtOctal";
             this.txtOctal.Size = new System.Drawing.Size(226, 20);
             this.txtOctal.TabIndex = 5;
-            this.txtOctal.TextChanged += new System.EventHandler(this.txtOctal_TextChanged);
             // 
             // txtBinario
             // 
@@ -108,6 +106,7 @@
             this.txtDecimal.Name = "txtDecimal";
             this.txtDecimal.Size = new System.Drawing.Size(226, 20);
             this.txtDecimal.TabIndex = 1;
+            this.txtDecimal.TextChanged += new System.EventHandler(this.txtDecimal_TextChanged);
             // 
             // label4
             // 
@@ -135,7 +134,6 @@
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Binário:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -154,6 +152,7 @@
             this.btnLimpar.TabIndex = 10;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSair
             // 
@@ -174,7 +173,7 @@
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculadora de Programador";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
