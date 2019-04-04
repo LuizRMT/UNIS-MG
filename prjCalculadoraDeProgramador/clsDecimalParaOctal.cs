@@ -9,27 +9,45 @@ namespace prjCalculadoraDeProgramador
     class clsDecimalParaOctal
     {
         public int numDecimal { get; set; }
-        public int numOctal { get; set; }
+        public string numOctal { get; set; }
 
-        /*public string converteParaOctal()
+        public string converteParaOctal()
         {
-            int expoente = 0, numMax = 0;
+            int expoente = 0, numMax = 0, resultado = 0;
             
-            while (numMax <= numDecimal)
+            while (numMax < numDecimal)
             {
-                numMax = Convert.ToUInt32(Math.Pow(8, expoente));
+                numMax = (int)Math.Pow(8, expoente);
 
                 expoente++;
+
+                if(numMax > numDecimal)
+                {
+                    expoente--;
+                }
+             
             }
+
+            expoente--;
 
             while (expoente >= 0)
             {
-                numOctal += numDecimal / Convert.ToUInt32(Math.Pow(8, expoente));
+                resultado = Convert.ToInt32(numDecimal / (int)Math.Pow(8, expoente));              
+
+                if(resultado >= 10)
+                {
+                    resultado /= 10;
+                }
+                
+                numDecimal -= resultado * (int)Math.Pow(8, expoente);
+
+                numOctal += Convert.ToString(resultado);
 
                 expoente--;
+
             }
 
-            return Convert.ToString(numOctal);
-        }*/
+            return numOctal;
+        }
     }
 }

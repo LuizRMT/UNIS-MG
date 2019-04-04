@@ -24,6 +24,7 @@ namespace prjCalculadoraDeProgramador
 
         private void txtDecimal_TextChanged(object sender, EventArgs e)
         {
+            //Converte de decimal para binário quando é inserido valor no campo "Decimal".
             clsDecimalParaBinario novoBinario = new clsDecimalParaBinario();
             
             if(txtDecimal.Text == "")
@@ -36,6 +37,22 @@ namespace prjCalculadoraDeProgramador
             }
 
             txtBinario.Text = novoBinario.converteParaBinario();
+
+            //Converte de decimal para octal quando é inserido valor no campo "Decimal".
+            clsDecimalParaOctal novoOctal = new clsDecimalParaOctal();
+
+            if (txtDecimal.Text == "")
+            {
+                novoOctal.numDecimal = 0;
+            }
+            else
+            {
+                novoOctal.numDecimal = Convert.ToInt32(txtDecimal.Text);
+            }
+
+            txtOctal.Text = novoOctal.converteParaOctal();
+
+
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
