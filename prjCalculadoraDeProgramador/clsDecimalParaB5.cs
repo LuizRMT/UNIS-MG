@@ -13,7 +13,7 @@ namespace prjCalculadoraDeProgramador
 
         public string converteParaB5()
         {
-            int quociente = 0;
+            int quociente;
             string resto = string.Empty;
 
             do

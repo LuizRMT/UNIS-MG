@@ -94,13 +94,45 @@ namespace prjCalculadoraDeProgramador
             clsBinarioParaDecimal novoDecimal = new clsBinarioParaDecimal();
             if (txtBinario.Text == "")
             {
-                novoDecimal.numBinario = "";            }
+                novoDecimal.numBinario = Convert.ToString(0);            }
             else
             {
                 novoDecimal.numBinario = txtBinario.Text;
             }
 
             txtDecimal.Text = Convert.ToString(novoDecimal.converteParaDecimal());
+        }
+
+        private void txtOctal_TextChanged(object sender, EventArgs e)
+        {
+            //Converte de octal para decimal quando é inserido um valor no campo "Octal".
+            clsOctalParaDecimal novoDecimal = new clsOctalParaDecimal();
+            if (txtOctal.Text == "")
+            {
+                novoDecimal.numOctal = 0;
+            }
+            else
+            {
+                novoDecimal.numOctal = Convert.ToInt32(txtOctal.Text);
+            }
+
+            txtDecimal.Text = Convert.ToString(novoDecimal.converteParaDecimal());
+        }
+
+        private void txtBase5_TextChanged(object sender, EventArgs e)
+        {
+            //Converte de base 5 para decimal quando é inserido um valor no campo "Base 5".
+            clsB5ParaDecimal novoDecimal = new clsB5ParaDecimal();
+            if (txtBase5.Text == "")
+            {
+                novoDecimal.numB5 = 0;
+            }
+            else
+            {
+                novoDecimal.numB5 = Convert.ToInt32(txtBase5.Text);
+            }
+
+            txtDecimal.Text = novoDecimal.converteParaDecimal();
         }
     }
 }
