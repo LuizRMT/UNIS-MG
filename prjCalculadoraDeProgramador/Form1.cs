@@ -52,7 +52,31 @@ namespace prjCalculadoraDeProgramador
 
             txtOctal.Text = novoOctal.converteParaOctal();
 
+            //Converte de decimal para Hexa quando é inserido um valor no campo "Decimal".
+            clsDecimalParaHexa novoHexa = new clsDecimalParaHexa();
+            if (txtDecimal.Text == "")
+            {
+                novoHexa.numDecimal = 0;
+            }
+            else
+            {
+                novoHexa.numDecimal = Convert.ToInt32(txtDecimal.Text);
+            }
 
+            txtHexa.Text = novoHexa.converteParaHexa();
+
+            //Converte de decimal para base 5 quando é inserido um valor no campo "Decimal".
+            clsDecimalParaB5 novoB5 = new clsDecimalParaB5();
+            if (txtDecimal.Text == "")
+            {
+                novoB5.numDecimal = 0;
+            }
+            else
+            {
+                novoB5.numDecimal = Convert.ToInt32(txtDecimal.Text);
+            }
+
+            txtBase5.Text = novoB5.converteParaB5();
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -62,6 +86,21 @@ namespace prjCalculadoraDeProgramador
             txtOctal.Text = "";
             txtHexa.Text = "";
             txtBase5.Text = "";
+        }
+
+        private void txtBinario_TextChanged(object sender, EventArgs e)
+        {
+            //Converte de binário para decimal quando é inserido um valor no campo "Binário".
+            clsBinarioParaDecimal novoDecimal = new clsBinarioParaDecimal();
+            if (txtBinario.Text == "")
+            {
+                novoDecimal.numBinario = "";            }
+            else
+            {
+                novoDecimal.numBinario = txtBinario.Text;
+            }
+
+            txtDecimal.Text = Convert.ToString(novoDecimal.converteParaDecimal());
         }
     }
 }

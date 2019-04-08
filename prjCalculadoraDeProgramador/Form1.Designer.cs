@@ -99,6 +99,7 @@
             this.txtBinario.Name = "txtBinario";
             this.txtBinario.Size = new System.Drawing.Size(226, 20);
             this.txtBinario.TabIndex = 3;
+            this.txtBinario.TextChanged += new System.EventHandler(this.txtBinario_TextChanged);
             // 
             // txtDecimal
             // 

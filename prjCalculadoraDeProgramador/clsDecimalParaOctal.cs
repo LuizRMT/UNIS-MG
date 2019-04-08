@@ -21,7 +21,7 @@ namespace prjCalculadoraDeProgramador
 
                 expoente++;
 
-                if(numMax > numDecimal)
+               if(numMax > numDecimal)
                 {
                     expoente--;
                 }
