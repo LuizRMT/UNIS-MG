@@ -85,6 +85,7 @@
             this.txtHexa.Name = "txtHexa";
             this.txtHexa.Size = new System.Drawing.Size(226, 20);
             this.txtHexa.TabIndex = 7;
+            this.txtHexa.TextChanged += new System.EventHandler(this.txtHexa_TextChanged);
             // 
             // txtOctal
             // 

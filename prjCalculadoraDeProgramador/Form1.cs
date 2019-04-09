@@ -102,5 +102,26 @@ namespace prjCalculadoraDeProgramador
 
             txtDecimal.Text = Convert.ToString(novoDecimal.converteParaDecimal());
         }
+
+        private void txtHexa_TextChanged(object sender, EventArgs e)
+        {
+
+            //Converte de hexadecimal para decimal quando é inserido um valor no campo "Hexadecimal".
+
+            clsHexaParaDecimal novoDecimal = new clsHexaParaDecimal();
+
+             if (txtHexa.Text == "")
+                {
+                   novoDecimal.numHexadecimal = Convert.ToString(0);
+             }
+             else
+             {
+                   novoDecimal.numHexadecimal = Convert.ToString(txtHexa.Text);
+             }
+
+             txtDecimal.Text = Convert.ToString(novoDecimal.converteParaDecimal());
+
+            
+        }
     }
 }
