@@ -46,13 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsB5ParaDecimal.cs" />
     <Compile Include="clsBinarioParaDecimal.cs" />
     <Compile Include="clsDecimalParaB5.cs" />
     <Compile Include="clsDecimalParaBinario.cs" />
     <Compile Include="clsDecimalParaHexa.cs" />
     <Compile Include="clsDecimalParaOctal.cs" />
-    <Compile Include="clsOctalParaDecimal.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

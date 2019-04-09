@@ -13,6 +13,7 @@ namespace prjCalculadoraDeProgramador
 
         public int converteParaDecimal()
         {
+            
             return Convert.ToInt32(numBinario, 2);
         }
     }

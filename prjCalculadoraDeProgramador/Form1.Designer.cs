@@ -69,7 +69,6 @@
             this.txtBase5.Name = "txtBase5";
             this.txtBase5.Size = new System.Drawing.Size(226, 20);
             this.txtBase5.TabIndex = 9;
-            this.txtBase5.TextChanged += new System.EventHandler(this.txtBase5_TextChanged);
             // 
             // label5
             // 
@@ -93,7 +92,6 @@
             this.txtOctal.Name = "txtOctal";
             this.txtOctal.Size = new System.Drawing.Size(226, 20);
             this.txtOctal.TabIndex = 5;
-            this.txtOctal.TextChanged += new System.EventHandler(this.txtOctal_TextChanged);
             // 
             // txtBinario
             // 
